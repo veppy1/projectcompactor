@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+projectcompactor/__init__.py
+projectcompactor/generator.py
+projectcompactor.egg-info/PKG-INFO
+projectcompactor.egg-info/SOURCES.txt
+projectcompactor.egg-info/dependency_links.txt
+projectcompactor.egg-info/entry_points.txt
+projectcompactor.egg-info/not-zip-safe
+projectcompactor.egg-info/requires.txt
+projectcompactor.egg-info/top_level.txt
+tests/test_generator.py
