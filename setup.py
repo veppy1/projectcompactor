@@ -7,13 +7,13 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setuptools.setup(
     name="projectcompactor",
-    version="0.2.0",  # Incremented version due to enhancements
-    author="Your Name",
-    author_email="your.email@example.com",
+    version="0.3.0",  # Incremented version due to enhancements
+    author="veppy",
+    author_email="vonepern@gmail.com",
     description="A tool to generate a project tree and extract file contents.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/projectcompactor",
+    url="https://github.com/veppy1/projectcompactor",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
