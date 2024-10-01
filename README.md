@@ -41,59 +41,66 @@ Install **ProjectCompactor** easily using `pip`:
 
 ```bash
 pip install projectcompactor
-
-
+```
 Ensure you have Python 3.6 or higher installed.
 
-🖥️ Usage
-After installation, you can use the projectcompactor command directly from your terminal.
+## 🖥️ Usage
 
-Basic Command
+After installation, you can use the `projectcompactor` command directly from your terminal.
+
+### Basic Command
+
 Generate a project structure of the current directory:
 
-bash
-Copy code
+```bash
 projectcompactor
+```
+
 Specify a Directory
 Analyze a specific directory:
 
-bash
-Copy code
+```bash
 projectcompactor /path/to/your/project
+```
+
 Customize Output File
 Specify a custom output file name:
 
-bash
-Copy code
+```bash
 projectcompactor -o my_structure.txt
+```
+
 Add Additional Text File Extensions
 Include additional file extensions to treat as text files:
 
-bash
-Copy code
+```bash
 projectcompactor -e .rst .conf
+```
+
 Exclude Specific Directories and File Types
 Exclude directories like node_modules and file types like .log:
 
-bash
-Copy code
+```bash
 projectcompactor --exclude-dirs node_modules .git --exclude-files .log .tmp
+```
+
 Enable Verbose Logging
 Get detailed logs during execution:
 
-bash
-Copy code
+```bash
 projectcompactor -v
+```
+
 Full Example
 Combine multiple options for a comprehensive analysis:
-
-bash
-Copy code
+```bash
 projectcompactor /path/to/your/project -o project_structure.txt -e .rst .conf --exclude-dirs node_modules .git --exclude-files .log .tmp -v
+```
+
+
 📂 Sample Output
 Project Structure Section
-markdown
-Copy code
+```bash
 # Project Structure
 
 project/
@@ -104,9 +111,11 @@ project/
     assets/
         logo.png
         styles.css
+```
+
+
 File Details Section
-markdown
-Copy code
+```bash
 # File Details
 
 ## README.md
@@ -129,12 +138,10 @@ def helper():
 ## assets/styles.css
 ### Contents of styles.css
 body { margin: 0; padding: 0; }
+```
+
 🎯 Use Cases
 📚 Project Documentation
-Create detailed documentation of your project's structure and contents for onboarding new team members.
-🔍 Codebase Analysis
-Quickly understand the layout and key components of large or unfamiliar codebases.
+🔍 Uploading to Chat Assistant
 🗃️ Archiving Projects
-Archive project structures and file contents for backup or versioning purposes.
 📊 Reporting
-Generate reports on project composition for presentations or audits.
