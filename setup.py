@@ -7,7 +7,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setuptools.setup(
     name="projectcompactor",
-    version="0.3.0",  # Incremented version due to enhancements
+    version="0.5.0",  # Incremented version due to enhancements
     author="veppy",
     author_email="vonepern@gmail.com",
     description="A tool to generate a project tree and extract file contents.",

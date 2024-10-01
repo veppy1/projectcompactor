@@ -2,27 +2,33 @@ name: Publish Python 🐍 distribution 📦 to PyPI
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - main  # Triggers on push to the main branch
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.8'  # Specify your desired Python version
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install setuptools wheel twine
 
-    - name: Build dist
+    - name: Run Tests
+      run: |
+        pip install pytest
+        pytest
+
+    - name: Build distribution
       run: |
         python setup.py sdist bdist_wheel
 
